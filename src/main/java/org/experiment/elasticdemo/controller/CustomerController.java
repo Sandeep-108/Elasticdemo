@@ -33,4 +33,9 @@ public class CustomerController {
         return customerDao.findById(id).get();
     }
 
+
+    @GetMapping("/ping")
+    public String getPing(){
+        return "Pong";
+    }
 }
